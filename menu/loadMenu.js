@@ -33,11 +33,11 @@ if (allText != null) {
 allText=null
 readTextFile(`../apps/${i}/NAME`)
 document.write("<br><br>")
-document.write(`<appext>${i}.</appext><app><a href=../apps/${i}/index.html><img src="../apps/${i}/icon.png" width=20px height=20px> </img> ${allText}</a></app>`);
+document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="../apps/${i}/icon.png" width=20px height=20px> </img> ${allText}</a></app>`);
 } else {
 readTextFile(`../apps/${i}/NAME`)
 document.write("<br><br>")
-document.write(`<appext>${i}.</appext><app><a href=../apps/${i}/index.html><img src="deficon.png" width=20px height=20px> </img> ${allText}</a></app>`);
+document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="deficon.png" width=20px height=20px> </img> ${allText}</a></app>`);
 }
 } else {
   elem.remove();
