@@ -70,6 +70,10 @@ src: url("MyriadProBold.ttf");
     animation: move_wave 15s linear infinite;
 }
 
+body {
+	background-color: #7de4ff
+}
+
 div.loading {
 	filter: invert(0.02);
 }
