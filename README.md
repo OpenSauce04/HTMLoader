@@ -2,15 +2,15 @@
 
 1. Download or clone the the repo, then enter the folder.
 
-2. If it is not already installed, install Ruby
+2. If it is not already installed, install Ruby (https://tinyurl.com/y5nfbk9z for Windows, `apt install ruby-full` for Linux)
 
-3. If bundle is not installed, type `gem install bundle`
+3. If bundle is not installed, type `gem install bundle` into the terminal
 
 4. In the terminal type `bundle install`
 
-5. Open `update.rb`
+5. Run `update.rb`
 
-6. Open `server.rb`
+6. Run `server.rb`
 
 7. Open an internet browser and go to `localhost:8000` (looks a bit broken on firefox)
 
