@@ -12,7 +12,7 @@
 
 6. Run `server.rb`
 
-7. Open an internet browser and go to `localhost:8000` (looks a bit broken on firefox)
+7. Open an internet browser and go to `localhost:8000`
 
 To connect to the menu on a game console (may or may not work propperly depending on what you are using), follow steps 1-6, then go to the console's internet browser and enter `<computer's ipv4>:8000`
 
