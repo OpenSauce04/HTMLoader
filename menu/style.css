@@ -72,9 +72,13 @@ src: url("MyriadProBold.ttf");
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
-
 body {
-	background-color: #7de4ff
+	background-color: #7de4ff;
+}
+@-moz-document url-prefix() {
+body {
+	background-color: #88FFFF;
+}
 }
 
 div.loading {
@@ -89,7 +93,6 @@ div.screentop {
 div.screenbottom {
   width: 100vw;
   height: 50vh;
-  background-color: #7de4ff;
   margin: auto;
 }
 div.logo {
