@@ -1,8 +1,9 @@
+require 'git'
 require 'fileutils'
 FileUtils.rm_rf("HTMLoader-apps")
 FileUtils.rm_rf("apps")
 puts "Downloading..."
-system("git clone https://github.com/Daniel-Bradbury/HTMLoader-apps.git")
+Git.clone("https://github.com/Daniel-Bradbury/HTMLoader-apps.git","HTMLoader-apps")
 puts "Preparing patch..."
 File.rename("HTMLoader-apps", "apps")
 FileUtils.rm_rf("apps/.git")
