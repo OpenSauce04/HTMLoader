@@ -72,14 +72,7 @@ src: url("MyriadProBold.ttf");
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
-body {
-	background-color: #7de4ff;
-}
-@-moz-document url-prefix() {
-body {
-	background-color: #88FFFF;
-}
-}
+
 
 div.loading {
 	filter: invert(0.02);
