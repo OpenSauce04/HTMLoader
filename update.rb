@@ -1,5 +1,6 @@
 require 'git'
 require 'fileutils'
+puts "Removing old entries..."
 FileUtils.rm_rf("HTMLoader-apps")
 FileUtils.rm_rf("apps")
 puts "Downloading..."
