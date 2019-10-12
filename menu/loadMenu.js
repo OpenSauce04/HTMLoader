@@ -1,4 +1,3 @@
-allText = 0
 var elem = document.getElementById("load");
 
 
