@@ -1,7 +1,8 @@
-|Device|Supported?|Notes|
+|Platform|Supported?|Notes|
 |--------------|------------|--------------------------------------|
 |Windows (Chrome)|✔️||
 |Windows (Firefox)|✔️||
+|Windows (Opera)|✔️||
 |Linux (Chromium)|✔️||
 |Linux (Firefox)|✔️||
 |Android (Chrome)|✔️||
