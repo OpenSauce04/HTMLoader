@@ -5,8 +5,7 @@ if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
 if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 
 console.log("Detected OS: "+OSName)
-if ((OSName=="Linux") || (OSName=="UNIX")) {
-	console.log("Detected Unix")
+if (OSName!="Windows") {
 	document.write("<style>");
 	document.write("body {");
 	document.write("	background-color: #7de4ff;");
