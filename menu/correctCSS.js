@@ -4,7 +4,7 @@ if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
 if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
 if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
 
-console.log(OSName)
+console.log("Detected OS: "+OSName)
 if ((OSName=="Linux") || (OSName=="UNIX")) {
 	console.log("Detected Unix")
 	document.write("<style>");

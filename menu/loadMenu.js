@@ -24,8 +24,6 @@ while (true) {
 i = i + 1
 allText=null
 readTextFile(`../apps/${i}/index.html`)
-console.log(i)
-console.log(allText)
 if (allText != null) {
 allText=null
 readTextFile(`../apps/${i}/icon.png`)
