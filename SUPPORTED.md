@@ -1,8 +1,12 @@
-| Device       | Supported? | Quirks                               |
+|Device|Supported?|Notes|
 |--------------|------------|--------------------------------------|
-| PC           | ✔️          ||
-| Android      | ✔️          |Runs very slowly on most phones|
-| Oculus Quest | ✔️          ||
-| PS4          | ✔️          |Must have the IP infront of a "https://"|
-| Wii U        | ❌          ||
-| 3DS          | ❌          ||
+|Windows (Chrome)|✔️||
+|Windows (Firefox)|✔️||
+|Linux (Chromium)|✔️||
+|Linux (Firefox)|✔️||
+|Android (Chrome)|✔️||
+|Android (Firefox)|✔️|Runs very slowly on most phones compared to Chrome|
+|Oculus Quest |✔️||
+|PS4|✔️|Must have the IP infront of a "https://"|
+|Wii U|❌||
+|3DS|❌||
