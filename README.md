@@ -4,7 +4,7 @@
 
 2. If it is not already installed, install Ruby (https://tinyurl.com/y5nfbk9z for Windows, `apt install ruby-full` for Linux)
 
-3. If bundle is not installed, type `gem install bundle` into the terminal
+3. If bundle is not installed, type `gem install bundler:1.17.3` into the terminal
 
 4. In the terminal type `bundle install`
 
