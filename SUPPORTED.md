@@ -11,3 +11,4 @@
 |PS4|✔️|Must have the IP infront of a "https://"|
 |Wii U|❌||
 |3DS|❌||
+|WebOS|✔️|HTTPS doesn't function correctly, use HTTP instead|
