@@ -2,7 +2,6 @@ body {
   background: url("petals.png") repeat 0 0;
   animation: slide 20s linear infinite; 
   background-size: 1500px 750px;
-  image-rendering: crisp-edges;
   background-color: lightskyblue;
 }
 div.screentop {
