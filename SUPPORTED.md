@@ -12,4 +12,4 @@
 |Wii U|❌||
 |3DS|❌||
 |WebOS|✔️|HTTPS doesn't function correctly, use HTTP instead|
-|Nintendo Switch|✔️|Must be run under http, not https|
+|Nintendo Switch|✔️|Must be run under HTTP, does not work under HTTPS|
