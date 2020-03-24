@@ -3,6 +3,10 @@ body {
   animation: slide 20s linear infinite; 
   background-size: 1500px 750px;
   background-color: lightskyblue;
+  
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 div.screentop {
   background: url("tree.png");
