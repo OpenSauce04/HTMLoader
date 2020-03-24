@@ -1,0 +1,54 @@
+body {
+  background: url("petals.png") repeat 0 0;
+  animation: slide 20s linear infinite; 
+  background-size: 1500px 750px;
+  image-rendering: crisp-edges;
+  background-color: lightskyblue;
+}
+div.screentop {
+  background: url("tree.png");
+  background-repeat: repeat-x;
+  background-size: 1000px 500px;
+  background-color: #00000000;
+  padding-bottom: 80vh;
+  margin-bottom: -80vh;
+  
+}
+div.screenbottom {
+
+}
+div.logo {
+  font-family: 'MyriadProBold';
+  color: #FFFFFF;
+  font-size: 70px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+app {
+  padding: 5px;
+  border-radius: 15px;
+  margin: 25px 25px 25px 5px;
+  font-family: 'MyriadProBold';
+  color: #FFFFFF;
+  font-size: 25px;
+  background-color: #00000055;
+}
+appext {
+  margin-left: 35px;
+  padding: 5px;
+  border-radius: 15px;
+  font-family: 'MyriadProBold';
+  color: #FFFFFF;
+  font-size: 25px;
+  background-color: #FFFFFF00
+}
+
+@keyframes slide {
+  from { background-position: 0 0; }
+  to { background-position: 0 750px; }
+}
