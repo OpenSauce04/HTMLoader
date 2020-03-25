@@ -23,7 +23,7 @@ names.each_line do |line|
     File.rename(line.chomp.split("|")[0], line.chomp.split("|")[1]) 
 end
 puts "Setting icons..."
-apps=Dir.entries(".").select {|f| !File.directory? f}
+apps = Dir.glob('*').select {|f| File.directory? f}
 apps.each do |app|
     if File.file?("ICON/"+app.chomp+".ico")
         FileUtils.mv("ICON/"+app.chomp+".ico", app.chomp+"/favicon.ico")
