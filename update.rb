@@ -4,7 +4,7 @@ puts "Removing old apps..."
 FileUtils.rm_rf("HTMLoader-apps")
 FileUtils.rm_rf("apps")
 puts "Downloading main repo..."
-Git.clone("https://github.com/Daniel-Bradbury/HTMLoader-apps.git","HTMLoader-apps", :branch => "better-download")
+Git.clone("https://github.com/Daniel-Bradbury/HTMLoader-apps.git","HTMLoader-apps")
 Dir.chdir "HTMLoader-apps"
 urlsf=File.open('appurls.txt')
 urls=urlsf.read
