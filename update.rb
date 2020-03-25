@@ -14,7 +14,7 @@ urls.each_line do |line|
     puts "  Downloading "+line.chomp+"..."
     Git.clone(line.chomp,File.basename(line.chomp,".git"))
 end
-puts "Renaming folders to app name..."
+puts "Renaming folders..."
 namesf=File.open('appnames.txt')
 names=namesf.read
 namesf.close()
@@ -22,9 +22,22 @@ names.gsub!(/\r\n?/, "\n")
 names.each_line do |line|
     File.rename(line.chomp.split("|")[0], line.chomp.split("|")[1]) 
 end
+puts "Setting icons..."
+apps=Dir.entries(".").select {|f| !File.directory? f}
+apps.each do |app|
+    if File.file?("ICON/"+app.chomp+".ico")
+        FileUtils.mv("ICON/"+app.chomp+".ico", app.chomp+"/favicon.ico")
+        puts "  "+app.chomp+".ico found."
+    end
+    if File.file?("ICON/"+app.chomp+".png")
+        FileUtils.mv("ICON/"+app.chomp+".png", app.chomp+"/icon.png")
+        puts "  "+app.chomp+".png found."
+    end
+end
 puts "Preparing patch..."
 File.delete("appurls.txt")
 File.delete("appnames.txt")
+FileUtils.rm_rf("ICON")
 Dir.chdir "../"
 FileUtils.mv("HTMLoader-apps", "apps")
 FileUtils.rm_rf("apps/.git")

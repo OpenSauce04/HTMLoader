@@ -44,15 +44,22 @@ if (allText != null) {
 allTextAlt=null
 allText=null
 readTextFileAlt(`../apps/${i}/NAME`)
-readTextFile(`../apps/${i}/${allTextAlt}.icon.png`)
+readTextFile(`../apps/${i}/favicon.ico`)
 if (allText != null) {
 allText=null
 document.write("<br><br>")
-document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="../apps/${i}/${allTextAlt}.icon.png" width=20px height=20px> </img> ${allTextAlt}</a></app>`);
+document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="../apps/${i}/favicon.ico" width=20px height=20px> </img> ${allTextAlt}</a></app>`);
+} else {
+readTextFile(`../apps/${i}/icon.png`)
+if (allText != null) {
+allText=null
+document.write("<br><br>")
+document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="../apps/${i}/icon.png" width=20px height=20px> </img> ${allTextAlt}</a></app>`);
 } else {
 readTextFile(`../apps/${i}/NAME`)
 document.write("<br><br>")
 document.write(`<appext></appext><app><a href=../apps/${i}/index.html><img src="deficon.png" width=20px height=20px> </img> ${allTextAlt}</a></app>`);
+}
 }
 } else {
   elem.remove();
