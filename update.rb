@@ -41,7 +41,7 @@ FileUtils.rm_rf("ICON")
 Dir.chdir "../"
 FileUtils.mv("HTMLoader-apps", "apps")
 FileUtils.rm_rf("apps/.git")
-system("ruby patch.rb")
-puts "Finishing update..."
+system("ruby module/patch.rb")
+puts "Finishing..."
 FileUtils.rm_rf("apps")
 File.rename("patched", "apps")
