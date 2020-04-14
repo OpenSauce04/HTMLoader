@@ -25,19 +25,19 @@ end
 puts "Setting icons..."
 apps = Dir.glob('*').select {|f| File.directory? f}
 apps.each do |app|
-    if File.file?("ICON/"+app.chomp+".ico")
-        FileUtils.mv("ICON/"+app.chomp+".ico", app.chomp+"/favicon.ico")
+    if File.file?("_icon/"+app.chomp+".ico")
+        FileUtils.mv("_icon/"+app.chomp+".ico", app.chomp+"/favicon.ico")
         puts "  "+app.chomp+".ico found."
     end
-    if File.file?("ICON/"+app.chomp+".png")
-        FileUtils.mv("ICON/"+app.chomp+".png", app.chomp+"/icon.png")
+    if File.file?("_icon/"+app.chomp+".png")
+        FileUtils.mv("_icon/"+app.chomp+".png", app.chomp+"/icon.png")
         puts "  "+app.chomp+".png found."
     end
 end
 puts "Preparing patch..."
 File.delete("appurls.txt")
 File.delete("appnames.txt")
-FileUtils.rm_rf("ICON")
+FileUtils.rm_rf("_icon")
 Dir.chdir "../"
 FileUtils.mv("HTMLoader-apps", "apps")
 FileUtils.rm_rf("apps/.git")
