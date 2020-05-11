@@ -8,7 +8,7 @@
 |Android (Chrome)|✔️||
 |Android (Firefox)|✔️|Runs very slowly on most phones compared to Chrome|
 |Oculus Quest |✔️||
-|PS4|✔️|Must have the IP infront of a "https://"|
+|PS4|✔️||
 |Wii U|❌||
 |3DS|❌||
 |WebOS|✔️|HTTPS doesn't function correctly, use HTTP instead|
