@@ -4,7 +4,7 @@
 
 1. Download or clone the the repo, then enter the folder.
 
-2. If it is not already installed, install Ruby (https://tinyurl.com/y5nfbk9z for Windows, `apt install ruby-full` for Linux)
+2. If it is not already installed, install Ruby (https://rubyinstaller.org for Windows, `apt install ruby-full` for Linux)
 
 3. If bundle is not installed, type `gem install bundler:1.17.3` into the terminal
 
